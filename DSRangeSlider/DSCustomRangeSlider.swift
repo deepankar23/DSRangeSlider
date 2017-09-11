@@ -329,7 +329,7 @@ class DSCustomRangeSlider: UIControl {
                     nearestLeftEndPoint = 14 * ((Int)((lowerThumbEndPoint - 14) / 14) + 1)
                 }
 
-                // Issue Fix: If nearest left & right endPoints are same, the labels would be updated with same time...
+                // If nearest left & right endPoints are same, the labels would be updated with same time...
                 if nearestLeftEndPoint == nearestRightEndPoint {
                     nearestLeftEndPoint -= 14
                 }
@@ -351,7 +351,7 @@ class DSCustomRangeSlider: UIControl {
                     nearestRightEndPoint = 14
                 }
 
-                // Issue Fix: If nearest left & right endPoints are same, the labels would be updated with same time...
+                // If nearest left & right endPoints are same, the labels would be updated with same time...
                 if nearestRightEndPoint == nearestLeftEndPoint {
                     nearestRightEndPoint += 14
                 }

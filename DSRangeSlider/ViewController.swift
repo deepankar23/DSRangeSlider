@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
+    //MARK:- IB-Outlets
     @IBOutlet weak var hitButton: UIButton!
     
+    //MARK:- Gloabl Variables
     let customSlider = DSCustomRangeSlider(frame: CGRect.zero)
 
+    //MARK:- ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -25,6 +28,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
 
     
+    //MARK:- Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == DSRangePopoverSegueIdentifer{

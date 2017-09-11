@@ -9,10 +9,10 @@
 import Foundation
 
 
-let DSRangePopoverSegueIdentifer =  "DSRangePopoverSegue"
-
 let kCustomPopoverWidth: Double      = 880
 let kCustomPopoverHeight: Double      = 120
 let kSliderWidth: Double      = 702
 let kSliderHeight: Double      = 30
 
+
+let DSRangePopoverSegueIdentifer =  "DSRangePopoverSegue"

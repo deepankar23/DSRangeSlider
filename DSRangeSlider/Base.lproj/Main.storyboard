@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dvB-DM-aII">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Range Slider-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DSRangeSlider" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,8 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcn-Uj-kgl">
-                                <rect key="frame" x="135" y="369" width="754" height="30"/>
+                                <rect key="frame" x="135" y="361.5" width="754" height="45"/>
                                 <color key="backgroundColor" red="0.38972981770833331" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Hit Me"/>
                                 <connections>
                                     <segue destination="SH7-h8-EhM" kind="popoverPresentation" identifier="DSRangePopoverSegue" popoverAnchorView="tcn-Uj-kgl" id="S8n-av-FND">
@@ -39,6 +40,7 @@
                             <constraint firstAttribute="trailing" secondItem="tcn-Uj-kgl" secondAttribute="trailing" constant="135" id="bkJ-Af-Nl4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Range Slider" id="eN5-hd-yyv"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="768"/>
                     <connections>
@@ -47,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-72.799999999999997" y="151.57421289355324"/>
+            <point key="canvasLocation" x="650.9765625" y="151.5625"/>
         </scene>
         <!--Range Popover View Controller-->
         <scene sceneID="TBx-0J-bYL">
@@ -67,7 +69,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPC-sC-YH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="151"/>
+            <point key="canvasLocation" x="1606.640625" y="150.78125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L7P-mW-jU8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dvB-DM-aII" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ar-dt-lSO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vf2-2t-fW2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nu2-kH-Jfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73.2421875" y="151.5625"/>
         </scene>
     </scenes>
 </document>
