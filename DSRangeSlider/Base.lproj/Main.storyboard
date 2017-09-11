@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DSRangeSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcn-Uj-kgl">
+                                <rect key="frame" x="135" y="369" width="754" height="30"/>
+                                <color key="backgroundColor" red="0.38972981770833331" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hit Me"/>
+                                <connections>
+                                    <segue destination="SH7-h8-EhM" kind="popoverPresentation" identifier="DSRangePopoverSegue" popoverAnchorView="tcn-Uj-kgl" id="S8n-av-FND">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tcn-Uj-kgl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Tk-07-3X8"/>
+                            <constraint firstItem="tcn-Uj-kgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="135" id="Ixj-Sx-LeS"/>
+                            <constraint firstAttribute="trailing" secondItem="tcn-Uj-kgl" secondAttribute="trailing" constant="135" id="bkJ-Af-Nl4"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="hitButton" destination="tcn-Uj-kgl" id="1El-1b-Yc6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-72.799999999999997" y="151.57421289355324"/>
+        </scene>
+        <!--Range Popover View Controller-->
+        <scene sceneID="TBx-0J-bYL">
+            <objects>
+                <viewController id="SH7-h8-EhM" customClass="DSRangePopoverViewController" customModule="DSRangeSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ljh-vX-eYi"/>
+                        <viewControllerLayoutGuide type="bottom" id="pN8-A7-rkX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bCB-IJ-Ulx">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="124"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="124"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPC-sC-YH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="151"/>
+        </scene>
+    </scenes>
+</document>
