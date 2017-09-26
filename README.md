@@ -1,0 +1,2 @@
+# DSRangeSlider
+This component can be used for providing a time range in a slider. It's an alternative for UISlider as you can provide 2 outputs i.e. a range here whereas UISlider doesn't provide this functionality.  Usage includes giving a time range in an app where you want to see the staffing or reservation info in a particular store etc.  Currently there is a 15mins interval/slide in the slider which can be tweaked around to make it generic.
