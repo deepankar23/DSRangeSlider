@@ -100,9 +100,9 @@ class DSRangePopoverViewController: UIViewController, DSSliderTimeDelegate {
 
     func updateSliderTimings() {
         // Sanity Check to avoid crash due to wrong time format 
-        if  (sliderStartTimeLabel.text != "" && sliderStartTimeLabel.text?.characters.count == 12)
+        if  (sliderStartTimeLabel.text != "" && sliderStartTimeLabel.text?.count == 12)
             &&
-            (sliderEndTimeLabel.text != "" && sliderEndTimeLabel.text?.characters.count == 12) {
+            (sliderEndTimeLabel.text != "" && sliderEndTimeLabel.text?.count == 12) {
             sliderStartTime = sliderStartTimeLabel.text!.components(separatedBy: " ")[1]
             sliderStartDate = sliderStartTimeLabel.text!.components(separatedBy: " ")[0]
             
